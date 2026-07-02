@@ -8,5 +8,5 @@ vim.opt.number = true
 
 require("core.lazy_init")
 require("core.lsp")
-
+require("core.keymappings")
 vim.cmd.colorscheme "catppuccin-mocha"

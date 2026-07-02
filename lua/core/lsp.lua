@@ -1,6 +1,7 @@
 vim.lsp.enable({
 	"luals", -- lua
 	"rust_analyzer", --rust
+  "nixd", -- nix
 })
 vim.diagnostic.enable()
 vim.diagnostic.config({

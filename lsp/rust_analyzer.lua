@@ -1,10 +1,14 @@
 return {
-  cmd={"rust-analyzer"},
-  filetypes={"rust"},
-	settings = {
+  cmd = { "rust-analyzer" },
+  filetypes = { "rust" },
+  settings = {
     ['rust-analyzer'] = {
+      check = {
+        allTargets = false,
+      },
+
       diagnostics = {
-        enable = false;
+        enable = false,
       }
     }
   }

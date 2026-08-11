@@ -1,13 +1,14 @@
 vim.lsp.enable({
-	"luals", -- lua
-	"rust_analyzer", --rust
-  "nixd", -- nix
+  "luals",        -- lua
+  "rust_analyzer", --rust
+  "nixd",         -- nix
+  "gopls",        -- go
 })
 vim.diagnostic.enable()
 vim.diagnostic.config({
-  underline=true,
-  update_in_insert=true,
-  virtual_text={
+  underline = true,
+  update_in_insert = true,
+  virtual_text = {
     spacing = 2,
     source = "if_many",
     prefix = "!"
@@ -17,7 +18,7 @@ vim.diagnostic.config({
     style = "minimal",
     border = "rounded",
     source = "always",
-    
+
   }
 
 })

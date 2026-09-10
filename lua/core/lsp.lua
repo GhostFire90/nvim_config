@@ -1,8 +1,9 @@
 vim.lsp.enable({
-  "luals",        -- lua
+  "luals",         -- lua
   "rust_analyzer", --rust
-  "nixd",         -- nix
-  "gopls",        -- go
+  "nixd",          -- nix
+  "gopls",         -- go
+  "html",
 })
 vim.diagnostic.enable()
 vim.diagnostic.config({
@@ -21,4 +22,8 @@ vim.diagnostic.config({
 
   }
 
+})
+
+vim.lsp.config('html', {
+  capabilities = require('blink.cmp').get_lsp_capabilities(),
 })

@@ -9,8 +9,10 @@ return {
       -- refer to the configuration section below
       replace_netrw = true,
       diagnostics = true,
+      enabled = true,
     },
     image = {},
-    notify = {}
+    notify = {},
+    picker = {},
   }
 }

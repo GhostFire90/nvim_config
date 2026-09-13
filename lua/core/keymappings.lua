@@ -3,3 +3,5 @@ vim.keymap.set("n", "<C-l>", ":wincmd l<CR>")
 vim.keymap.set("n", "<C-k>", ":wincmd k<CR>")
 vim.keymap.set("n", "<C-j>", ":wincmd j<CR>")
 vim.keymap.set({ 'n', 'i' }, "<C-s>", "<Esc>:w<CR>")
+
+vim.keymap.set({ 'n', 'i' }, "<F2>", vim.lsp.buf.rename)
